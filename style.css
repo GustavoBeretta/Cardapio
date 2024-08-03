@@ -1,44 +1,59 @@
-:root{
-    --cor--primaria:#5E2129;
-    --cor--secundaria: #F6F6F6;
-    --cor--terciaria: #000000;
+:root {
+  --cor--primaria: #5e2129;
+  --cor--secundaria: #f6f6f6;
+  --cor--terciaria: #000000;
 
-    --fonte--titulo: "Krona One", sans-serif;
-    --fonte--texto:  "Montserrat", sans-serif;
+  --fonte--titulo: "Krona One", sans-serif;
+  --fonte--texto: "Montserrat", sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Ajuste a distância entre os botões aqui */
+}
 
+.contato {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.contato img {
+  width: 40px;
+  height: 40px;
 }
 
 .tipo_cardapio {
-    text-align: center;
-    margin: 20px 0;
-    color: var(--cor--primaria);
-    font-size: 35px;
+  text-align: center;
+  margin: 20px 0;
+  color: var(--cor--primaria);
+  font-size: 35px;
 }
 
 .card_produto {
-    background-color: var(--cor--primaria);
-    color: white;
-    width: 320px;
-    border-radius: 10px;
-    margin: 40px 5px;
-    display: flex;
-    padding: 10px;
-    position: relative;
+  background-color: var(--cor--primaria);
+  color: white;
+  width: 320px;
+  border-radius: 10px;
+  margin: 40px 5px;
+  display: flex;
+  padding: 10px;
+  position: relative;
 }
 
 .foto_produto {
-    height: 150px;
-    border-radius: 90px;
-    margin-right: 20px;
+  height: 150px;
+  border-radius: 90px;
+  margin-right: 20px;
 }
 
 .nome_produto {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 img {
@@ -46,16 +61,16 @@ img {
 }
 
 .peso {
-    font-size: 19px;
-    margin-bottom: 40px;
+  font-size: 19px;
+  margin-bottom: 40px;
 }
 
 .preço {
-    font-size: 20px;
-    font-weight: bold;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
 .produtos {
@@ -94,7 +109,7 @@ a:hover {
 
 #title {
   font-size: 35px;
-  color: #F6F6F6;
+  color: #f6f6f6;
 }
 
 .nav-list {
@@ -121,7 +136,7 @@ a:hover {
   background: none;
   border-top: 3px solid #fff;
   cursor: pointer;
-  z-index: 3; 
+  z-index: 3;
 }
 
 .hamburger::after,
@@ -180,11 +195,11 @@ a:hover {
   }
 
   .nav-list li:nth-child(4) a {
-      transition: 0.5s 0.8s;
-    }
+    transition: 0.5s 0.8s;
+  }
 
   .nav-list li:nth-child(5) a {
-    transition: 0.5s 1.0s;
+    transition: 0.5s 1s;
   }
 
   .nav-list li:nth-child(6) a {
@@ -217,7 +232,6 @@ a:hover {
     transform: rotate(-135deg);
     top: -7px;
   }
-
 }
 
 .no-scroll {
