@@ -21,6 +21,9 @@
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.whats_mobile {
   display: none;
 }
 
@@ -152,7 +155,7 @@ a:hover {
   transition: 0.3s;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .hamburger {
     display: block;
     z-index: 1;
@@ -236,6 +239,10 @@ a:hover {
 
   .contato {
     display: block;
+  }
+
+  .whats_web {
+    display: none;
   }
 }
 
